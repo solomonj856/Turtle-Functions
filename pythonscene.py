@@ -3,20 +3,20 @@ import turtle
 
 
 
-turtle.pensize(8)
+turtle.pensize(8) # pen size for turtle
 
-turtle.speed(0)
-
-
-turtle.shape('turtle')
+turtle.speed(0) #max speed
 
 
+turtle.shape('turtle') 
 
-turtle.pu()
 
-screen = turtle.getscreen()
 
-def ground(x , y):
+turtle.pu() #pen up
+
+screen = turtle.getscreen() #creates screen
+
+def ground(x , y): #ground function
     turtle.color('green')
     turtle.fillcolor('green')
     turtle.begin_fill()
@@ -34,7 +34,7 @@ def ground(x , y):
     turtle.pu()
 
     turtle.right(90)
-def switzerland(x, y):
+def switzerland(x, y): #switzerland flag
     
     
     turtle.color('red', 'yellow')
@@ -58,7 +58,7 @@ def switzerland(x, y):
 
     turtle.fillcolor('white')
     turtle.begin_fill()
-
+    #makes white cross
     turtle.forward(distance)
     turtle.left(90)
     turtle.forward(distance)
@@ -93,14 +93,14 @@ def switzerland(x, y):
     turtle.goto(x + 5 ,y -5)
     turtle.pd()
     turtle.forward(690)
-    turtle.color('grey')
+    turtle.color('grey') #makes pole
 
     turtle.fillcolor('grey')
 
     
     
 
-def sweden(x ,y):
+def sweden(x ,y): #sweden flag
     turtle.pu()
     
     turtle.right(270)
@@ -112,7 +112,7 @@ def sweden(x ,y):
     
 
 
-    turtle.begin_fill()
+    turtle.begin_fill() #fills flag
     
     for i in range(2):
         turtle.forward(500)
@@ -169,7 +169,7 @@ def sweden(x ,y):
     turtle.pd()
     turtle.left(90)
     turtle.forward(690)
-    turtle.color('grey')
+    turtle.color('grey') #makes pole
 
     turtle.fillcolor('grey')
 
